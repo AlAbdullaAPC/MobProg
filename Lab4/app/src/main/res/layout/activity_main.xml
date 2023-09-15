@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="258dp"
+        android:layout_height="72dp"
+        android:text="My basic calculator"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <TextView
+        android:id="@+id/message2"
+        android:layout_width="21dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="76dp"
+        android:text="+ - * /"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/x2"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toEndOf="@+id/x1"
+        app:layout_constraintTop_toBottomOf="@+id/message"
+        tools:text="+ - * /" />
+
+    <Button
+        android:id="@+id/clickMe"
+        android:layout_width="144dp"
+        android:layout_height="53dp"
+        android:onClick="onClick"
+        android:text="Submit"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/x1"
+        app:layout_constraintVertical_bias="0.647" />
+
+    <EditText
+        android:id="@+id/x1"
+        android:layout_width="119dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="-10dp"
+        android:ems="10"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toStartOf="@+id/x2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <EditText
+        android:id="@+id/x2"
+        android:layout_width="119dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="-10dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="text"
+        android:selectAllOnFocus="true"
+        android:text="0"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/x1"
+        app:layout_constraintTop_toBottomOf="@+id/message" />
+
+    <TextView
+        android:id="@+id/SumRes"
+        android:layout_width="67dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="96dp"
+        android:text="Sum"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.168"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/x1"
+        tools:text="Sum" />
+
+    <TextView
+        android:id="@+id/DifRes"
+        android:layout_width="67dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="96dp"
+        android:text="Difference"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.386"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/x1"
+        tools:text="Difference" />
+
+    <TextView
+        android:id="@+id/ProdRes"
+        android:layout_width="67dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="96dp"
+        android:text="Product"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.61"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/x2"
+        tools:text="Product" />
+
+    <TextView
+        android:id="@+id/QuoRes"
+        android:layout_width="67dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="96dp"
+        android:text="Quotient"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.834"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/x2"
+        tools:text="Quotient" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
