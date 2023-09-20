@@ -42,4 +42,22 @@ public class MainActivity extends AppCompatActivity {
         prodRes.setText("Product\n" + format.format(prod));
         quotRes.setText("Quotient\n" + format.format(quot));
     }
+
+    public void clearBtn(View view)
+    {
+        EditText x1 = findViewById(R.id.x1);
+        EditText x2 = findViewById(R.id.x2);
+
+        TextView sumRes = (TextView) findViewById(R.id.SumRes);
+        TextView diffRes = (TextView) findViewById(R.id.DifRes);
+        TextView prodRes = (TextView) findViewById(R.id.ProdRes);
+        TextView quotRes = (TextView) findViewById(R.id.QuoRes);
+
+        x1.setText("0");
+        x2.setText("0");
+        sumRes.setText("Sum");
+        diffRes.setText("Difference");
+        prodRes.setText("Product");
+        quotRes.setText("Quotient");
+    }
 }
